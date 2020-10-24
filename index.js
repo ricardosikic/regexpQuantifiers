@@ -14,3 +14,8 @@ console.log(findExclamation);
 
 
 
+// count how many times "de" appears (12 times)
+let text = "Los datos se van distribuyendo a lo largo de la noticia por el grado de interés que tengan. Este esquema se conoce en la profesión como la estructura de la pirámide invertida y pretende cumplir dos objetivos: el primero y más importante es que de esta forma el lector puede informarse de lo más importante de la noticia con rapidez, si por cualquier motivo interrumpe la lectura en el cuarto o quinto párrafo se habrá enterado de los aspectos más importantes referidos a ese acontecimiento. Si prosigue su lectura, podrá completar su información enterándose de más matices y profundizando sobre el acontecimiento.";
+
+const findWord = text.match(/de{1}/gi);
+console.log(findWord.length);
