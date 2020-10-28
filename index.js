@@ -19,3 +19,15 @@ let text = "Los datos se van distribuyendo a lo largo de la noticia por el grado
 
 const findWord = text.match(/de{1}/gi);
 console.log(findWord.length);
+
+
+// count how many times the char o appears
+const newText = "Esta vez se pudo haber hecho de mejor manera la programacion con regexp 101";
+
+const newAr = newText.match(/o{1}/gi).length;
+console.log(newAr);
+
+
+// Now use negative regexp to find the number and remove the spaces.
+const number = newText.match(/[^a-z]/gi).join('').trim();
+console.log(number);
